@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.gylhr.com</id>
     <title>lhr&apos;s blog</title>
-    <updated>2021-08-01T16:12:47.945Z</updated>
+    <updated>2021-08-01T16:27:08.384Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.gylhr.com"/>
     <link rel="self" href="https://blog.gylhr.com/atom.xml"/>
@@ -16,16 +16,6 @@
         <link href="https://blog.gylhr.com/zai-ti-yan-jing-tai-de-kuai-zhi-qian-de-tong/">
         </link>
         <updated>2021-08-01T12:36:30.000Z</updated>
-        <content type="html"><![CDATA[<p>经常有一种声音将Wordpress架构臃肿，但我觉得实际上它是一个全平台通用的程序，不可避免的要做一个“折衷派”。这也就导致了需要繁杂的mysql和php——在大型网站上运行非常靠谱，但我这种只买得起512mb内存的小鸡的人，想要跑点其他小程序就不太现实。同时，它作为动态的缺点就是每一次访问都需要向后端发起请求然后生成，遇到ddcc攻击直接暴毙。</p>
-<p>静态则是前端存着实实在在的文件，这样响应就快很多。著名架构由hexo之类的。这次用的Gridea是个图形化的编辑器，省去了git到库的那些纷繁复杂的指令，提交更方便些。</p>
-<p>搭建蛮简单的，网上也有教程，不作展开。这里提下矛盾主要是Github Pages已经被老大哥盯上了，间歇性阻断搞人心态，TLS证书是R3，速度慢得一批还不讨好国内某些资本家运作的浏览器；网上搜了一下，速度一般，经常被阻断的也不是个例。<img src="https://lib.gylhr.com/20210821/connectionreset.png" alt="TCP Connection Reset" loading="lazy"></p>
-<p>Coding Pages的页面在国内，用他们给的域名其实还蛮快的，ping 22ms，但如果要接入自己的域名就必须买爆贵的腾讯云境外线路，用完免费余额以后就是0.02/Gb的价格。他们的线路我测试过了，CN2一点没有，接入的是香港Amazon和HP的数据中心，线路上有163优化可是在国内的请求会遇到TCP连接重置，在国外一切正常（站长工具跑下来也基本是）<img src="https://lib.gylhr.com/20210821/redstaroverchina.png" alt="可以说是红星照耀中国了" loading="lazy"></p>
-<p>可见其实Gridea提供的两个选项里面没有一个好的。</p>
-<p>所以我选了Cloudflare Pages来优化。自选IP蛮好用的，其实对于动态页面来讲Cloudflare在国内确实减速，但是静态，而且又直接搭在他们服务器上，回源可以不计，还是有加速效果。我选的是他们没有公开列出的一个网段，用的人少些，速度能赶上苏卡大佬的。<br>
-<img src="https://lib.gylhr.com/20210821/good-cloudflare.png" alt="对比的情况" loading="lazy"></p>
-<p>这么一比较下来还是挺香的，图床还是用自己的vps来建，套Arvancloud CDN，灵活得多。</p>
-<p>参见<a href="https://www.v2ex.com/t/768823">不懂就问， Github Page 站点速度如何优化</a></p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[更新测试]]></title>
@@ -33,8 +23,6 @@
         <link href="https://blog.gylhr.com/geng-xin-ce-shi/">
         </link>
         <updated>2021-08-01T10:59:20.000Z</updated>
-        <content type="html"><![CDATA[<p>如果我这里更新，那么Cloudflare Page 上能否看到？还是说Cloudflare只是clone了一份之前的？</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Test]]></title>
@@ -42,9 +30,6 @@
         <link href="https://blog.gylhr.com/test/">
         </link>
         <updated>2021-08-01T08:34:54.000Z</updated>
-        <content type="html"><![CDATA[<p>这腾讯云的cdn是真的tm慢，Coding Pages解析在国内，ping20多ms。要自己加个域名却偏偏就要跑到国外去了，活久见</p>
-<p>根据一番Traceroute下来看，没有预想中的cn2，而且丢包都超过50%，简直了。</p>
-]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
@@ -57,25 +42,6 @@
 ]]></summary>
         <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
 ✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
 ]]></content>
     </entry>
 </feed>
