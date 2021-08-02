@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://blog.gylhr.com/favicon.ico?v=1627865781350">
+<link rel="shortcut icon" href="https://blog.gylhr.com/favicon.ico?v=1627907530870">
 <link rel="stylesheet" href="https://blog.gylhr.com/styles/main.css">
 
 
@@ -28,7 +28,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://blog.gylhr.com">
-        <img src="https://blog.gylhr.com/images/avatar.png?v=1627865781350" class="site-logo">
+        <img src="https://blog.gylhr.com/images/avatar.png?v=1627907530870" class="site-logo">
         <h1 class="site-title">lhr&#39;s blog</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -96,11 +96,11 @@
             <div class="post-content" v-pre>
               <p>经常有一种声音将Wordpress架构臃肿，但我觉得实际上它是一个全平台通用的程序，不可避免的要做一个“折衷派”。这也就导致了需要繁杂的mysql和php——在大型网站上运行非常靠谱，但我这种只买得起512mb内存的小鸡的人，想要跑点其他小程序就不太现实。同时，它作为动态的缺点就是每一次访问都需要向后端发起请求然后生成，遇到ddcc攻击直接暴毙。</p>
 <p>静态则是前端存着实实在在的文件，这样响应就快很多。著名架构由hexo之类的。这次用的Gridea是个图形化的编辑器，省去了git到库的那些纷繁复杂的指令，提交更方便些。</p>
-<p>搭建蛮简单的，网上也有教程，不作展开。这里提下矛盾主要是Github Pages已经被老大哥盯上了，间歇性阻断搞人心态，TLS证书是R3，速度慢得一批还不讨好国内某些资本家运作的浏览器；网上搜了一下，速度一般，经常被阻断的也不是个例。<img src="https://lib.gylhr.com/20210821/connectionreset.png" alt="TCP Connection Reset" loading="lazy"></p>
-<p>Coding Pages的页面在国内，用他们给的域名其实还蛮快的，ping 22ms，但如果要接入自己的域名就必须买爆贵的腾讯云境外线路，用完免费余额以后就是0.02/Gb的价格。他们的线路我测试过了，CN2一点没有，接入的是香港Amazon和HP的数据中心，线路上有163优化可是在国内的请求会遇到TCP连接重置，在国外一切正常（站长工具跑下来也基本是）<img src="https://lib.gylhr.com/20210821/redstaroverchina.png" alt="可以说是红星照耀中国了" loading="lazy"></p>
+<p>搭建蛮简单的，网上也有教程，不作展开。这里提下矛盾主要是Github Pages已经被老大哥盯上了，间歇性阻断搞人心态，TLS证书是R3，速度慢得一批还不讨好国内某些资本家运作的浏览器；网上搜了一下，速度一般，经常被阻断的也不是个例。<img src="https://lib.gylhr.com/20210801/connectionreset.png" alt="TCP Connection Reset" loading="lazy"></p>
+<p>Coding Pages的页面在国内，用他们给的域名其实还蛮快的，ping 22ms，但如果要接入自己的域名就必须买爆贵的腾讯云境外线路，用完免费余额以后就是0.02/Gb的价格。他们的线路我测试过了，CN2一点没有，接入的是香港Amazon和HP的数据中心，线路上有163优化可是在国内的请求会遇到TCP连接重置，在国外一切正常（站长工具跑下来也基本是）<img src="https://lib.gylhr.com/20210801/redstaroverchina.png" alt="可以说是红星照耀中国了" loading="lazy"></p>
 <p>可见其实Gridea提供的两个选项里面没有一个好的。</p>
 <p>所以我选了Cloudflare Pages来优化。自选IP蛮好用的，其实对于动态页面来讲Cloudflare在国内确实减速，但是静态，而且又直接搭在他们服务器上，回源可以不计，还是有加速效果。我选的是他们没有公开列出的一个网段，用的人少些，速度能赶上苏卡大佬的。<br>
-<img src="https://lib.gylhr.com/20210821/good-cloudflare.png" alt="对比的情况" loading="lazy"></p>
+<img src="https://lib.gylhr.com/20210801/good-cloudflare.png" alt="对比的情况" loading="lazy"></p>
 <p>这么一比较下来还是挺香的，图床还是用自己的vps来建，套Arvancloud CDN，灵活得多。</p>
 <p>参见<a href="https://www.v2ex.com/t/768823">不懂就问， Github Page 站点速度如何优化</a></p>
 

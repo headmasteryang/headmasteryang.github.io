@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.gylhr.com</id>
     <title>lhr&apos;s blog</title>
-    <updated>2021-08-02T00:56:22.564Z</updated>
+    <updated>2021-08-02T12:33:22.374Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.gylhr.com"/>
     <link rel="self" href="https://blog.gylhr.com/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>https://blog.gylhr.com/images/avatar.png</logo>
     <icon>https://blog.gylhr.com/favicon.ico</icon>
     <rights>All rights reserved 2021, lhr&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[警惕最近的"精神鸦片"]]></title>
+        <id>https://blog.gylhr.com/KyFExvTrL/</id>
+        <link href="https://blog.gylhr.com/KyFExvTrL/">
+        </link>
+        <updated>2021-08-02T11:09:02.000Z</updated>
+    </entry>
     <entry>
         <title type="html"><![CDATA[在"体验静态的快"之前的痛]]></title>
         <id>https://blog.gylhr.com/zai-ti-yan-jing-tai-de-kuai-zhi-qian-de-tong/</id>
