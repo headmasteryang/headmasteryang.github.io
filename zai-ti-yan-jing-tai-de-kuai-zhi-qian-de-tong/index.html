@@ -1,100 +1,258 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="int_尊敬的杨校长 的个人博客">
+<meta name="description" content="&lt;h2&gt;&#34;彼时彼刻，恰如此时此刻。&#34;&lt;/h2&gt;
+ &lt;script src=&#34;https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js&#34;&gt;&lt;/script&gt;">
+<meta name="theme-color" content="#000">
 <title>在&#34;体验静态的快&#34;之前的痛 | lhr&#39;s blog</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1629363720373">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/pisces.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://blog.gylhr.com/favicon.ico?v=1629362204769">
-<link rel="stylesheet" href="https://blog.gylhr.com/styles/main.css">
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <meta name="description" content="在"体验静态的快"之前的痛" />
+  <meta name="keywords" content="" />
+</head>
 
-
-
-    <meta name="description" content="经常有一种声音将Wordpress架构臃肿，但我觉得实际上它是一个全平台通用的程序，不可避免的要做一个“折衷派”。这也就导致了需要繁杂的mysql和php——在大型网站上运行非常靠谱，但我这种只买得起512mb内存的小鸡的人，想要跑点其他小..." />
-    <meta name="keywords" content="" />
-  </head>
-  <body>
-    <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://blog.gylhr.com">
-        <img src="https://blog.gylhr.com/images/avatar.png?v=1629362204769" class="site-logo">
-        <h1 class="site-title">lhr&#39;s blog</h1>
-      </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
       </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>lhr&#39;s blog</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">团结的人民永远不被击溃！</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+        </ul>
+      </nav>
     </div>
-    <div>
-      
-        
-          <a href="/" class="site-nav">
-            首页
-          </a>
-        
-      
-        
-          <a href="/archives" class="site-nav">
-            归档
-          </a>
-        
-      
-        
-          <a href="/tags" class="site-nav">
-            标签
-          </a>
-        
-      
-        
-          <a href="/post/about" class="site-nav">
-            关于
-          </a>
-        
-      
-    </div>
-  </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      <h2>"彼时彼刻，恰如此时此刻。"</h2>
- <script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script>
-    </div>
-    <div class="site-footer">
-      Powered by <a href="https://www.gylhr.com/" target="_blank">int_尊敬的杨校长</a> | <a class="rss" href="https://blog.gylhr.com/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
+  </header>
 </div>
 
+<script type="text/javascript"> 
+ 
+  let showNav = true;
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">在&#34;体验静态的快&#34;之前的痛</h2>
-            <div class="post-date">2021-08-01</div>
-            
-            <div class="post-content" v-pre>
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout pisces ">
+      <div class="section-layout-wrapper">
+        
+
+<div class="sidebar">
+  
+</div>
+<script>
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
+      }
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
+  }
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://blog.gylhr.com/zai-ti-yan-jing-tai-de-kuai-zhi-qian-de-tong/">
+      在&#34;体验静态的快&#34;之前的痛
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2021-08-01</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>3分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>595<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+            <div class="post-body next-md-body" id="post_body">
               <p>经常有一种声音将Wordpress架构臃肿，但我觉得实际上它是一个全平台通用的程序，不可避免的要做一个“折衷派”。这也就导致了需要繁杂的mysql和php——在大型网站上运行非常靠谱，但我这种只买得起512mb内存的小鸡的人，想要跑点其他小程序就不太现实。同时，它作为动态的缺点就是每一次访问都需要向后端发起请求然后生成，遇到ddcc攻击直接暴毙。</p>
 <p>静态则是前端存着实实在在的文件，这样响应就快很多。著名架构由hexo之类的。这次用的Gridea是个图形化的编辑器，省去了git到库的那些纷繁复杂的指令，提交更方便些。</p>
 <p>搭建蛮简单的，网上也有教程，不作展开。这里提下矛盾主要是Github Pages已经被老大哥盯上了，间歇性阻断搞人心态，TLS证书是R3，速度慢得一批还不讨好国内某些资本家运作的浏览器；网上搜了一下，速度一般，经常被阻断的也不是个例。<img src="https://lib.gylhr.com/20210801/connectionreset.png" alt="TCP Connection Reset" loading="lazy"></p>
@@ -106,49 +264,527 @@
 <p>参见<a href="https://www.v2ex.com/t/768823">不懂就问， Github Page 站点速度如何优化</a></p>
 
             </div>
+            <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      int_尊敬的杨校长
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.gylhr.com/zai-ti-yan-jing-tai-de-kuai-zhi-qian-de-tong/" title="在&#34;体验静态的快&#34;之前的痛">https://blog.gylhr.com/zai-ti-yan-jing-tai-de-kuai-zhi-qian-de-tong/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="警惕最近的&#34;精神鸦片&#34;" href="https://blog.gylhr.com/KyFExvTrL/">警惕最近的&#34;精神鸦片&#34;</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="警惕最近的&#34;精神鸦片&#34;" href="https://blog.gylhr.com/KyFExvTrL/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="更新测试" href="https://blog.gylhr.com/geng-xin-ce-shi/">更新测试</a>
+        <a class="nav-mobile-next" title="更新测试" href="https://blog.gylhr.com/geng-xin-ce-shi/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
             
-            
-              <div class="next-post">
-                <div class="next">下一篇</div>
-                <a href="https://blog.gylhr.com/geng-xin-ce-shi/">
-                  <h3 class="post-title">
-                    更新测试
-                  </h3>
-                </a>
-              </div>
-            
-
-            
+  
 
           </div>
-
         </div>
       </div>
     </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      Powered by <a href="https://www.gylhr.com/" target="_blank">int_尊敬的杨校长</a>
+    </div>
+  </footer>
+  
+  
+  <div class="pisces back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+</div>
+<script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
 
-AOS.init();
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    menuVisible: false,
-  },
-})
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target","_blank");
+      }
+    })
+  }
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
 
 </script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
+  </div>
+</body>
+<input hidden id="copy" />
+<script>
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+  });
+</script>
+
+<!-- <div class="search-mask" id="search_mask">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <i class="fa fa-times-circle"></i>
+    </div>
+    <div class="result">
+      
+      <div class="item">
+        <a class="result-title" href="https://blog.gylhr.com/-Vfpz-4m3/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;&amp;quot;密码学是关于如何在敌人存在的环境中通信&amp;quot;-- Ronald Rivest&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在网络间传输信息有隐患，存在被窃听、篡改、假冒等等风险。所以信息安全越来越被重视，成为了计算机学科中的一个分支。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;直到现代以前，密码学几乎专指加密算法：将普通信息（明文）转换成难以理解的资料（密文）的过程；解密算法则是其相反的过程：由密文转换回明文；加解密包含了这两种算法，一般加密即同时指称加密与解密的技术。这里主要概括我眼中密码学中最基础的三种加密算法：对称加密、非对称加密、混合加密。&lt;br&gt;
+#对称加密&lt;br&gt;
+对称加密好理解，就是通信双方事先约定好密钥，在传递信息时利用该密钥与特定加密算法加密明文，把密文发送给对方，对方又利用该密钥来解密。中间传输过程是一堆乱码，窃听者无法解密。常见的对称加密算法有：AES、Salsa20、RC5等等&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://lib.gylhr.com/20210819/Symmetric-Encryption.png&#34; alt=&#34;对称加密&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;对称加密有显著的缺点：必须在线下约定好密钥，如果通过线上传输那么则窃听者也可以看到密钥；大型服务商不可能对每一个用户都约定密钥，而如果采用统一密钥则又不能保证不泄露，导致效率低下。&lt;/p&gt;
+&lt;p&gt;#非对称加密&lt;br&gt;
+非对称加密是一种可以不在线下商定密钥就在线上安全传输的算法，缺点是计算量大需要大量CPU资源。&lt;/p&gt;
+&lt;p&gt;非对称加密有两个密钥，我们先设为A钥和B钥，两者在数学上有一定联系。根据数学知识，在特定的演算法下，用A钥加密的信息只能用B钥解开，用B钥加密的信息也只能由A钥解开；如果用B钥加密的信息用B钥是解不开的。我们随机规定AB中一者为公钥，另一者为私钥。公钥和加密算法是可以公布在互联网上的&lt;/p&gt;
+&lt;p&gt;如此一来，便有了经典Alice和Bob的演示：&lt;br&gt;
+1.Alice想要发信息给Bob，则Alice下载Bob在网上公布的公钥&lt;br&gt;
+2.下载该公钥，并把自己想要发送的信息用演算法与该公钥加密&lt;br&gt;
+3.将密文发送给Bob&lt;br&gt;
+4.Bob收到信息以后用自己的私钥解密，获得原文&lt;br&gt;
+5.这时Carol想要窃听通信，但是他仅仅掌握的是Bob的公钥和Alice用其加密过后的密文，苦于没有Bob的私钥，解密无法进行&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://lib.gylhr.com/20210819/Asymmetric-Encryption.png&#34; alt=&#34;非对称加密&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;至于上面的数学问题，这里以RSA算法为例，其他的算法有各自的数学原理，大本质上都是使用正向容易反向难得特性来达到目的：&lt;/p&gt;
+&lt;p&gt;##欧拉函数φ(n)&lt;br&gt;
+1.先选取两个质数&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo separator=&#34;true&#34;&gt;,&lt;/mo&gt;&lt;mi&gt;q&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;p,q&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.625em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;mpunct&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.16666666666666666em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03588em;&#34;&gt;q&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，令&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;mi&gt;q&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;n=p * q&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.6597200000000001em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;∗&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.625em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03588em;&#34;&gt;q&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，φ(n)表示小于n的正整数中与n互质的数的数目。&lt;br&gt;
+举例：取p=2,q=5,则n=10。小于10的数中，1,3,7,9是和10互质的数，则&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;φ(n)=4&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;φ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;2.根据欧拉函数&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0&#34;&gt;证明&lt;/a&gt;，有：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;q&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;φ(n)=(p-1)x(q-1)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;φ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03588em;&#34;&gt;q&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;
+举例：根据上述，&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;φ(n)=4=(2-1)(5-1)=1x4=4&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;φ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;−&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;4&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;##模运算&lt;br&gt;
+模运算因为正向计算容易，反向困难，又被成为单向函数。加密为&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;m^e mod n = c&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.664392em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;e&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;c&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，其中（m=message e=encrypt c=cipher d=decrypt）c数值越大，由c反推越不可能。解密则是由&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;c^d mod n =m&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.849108em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.849108em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;故整个过程中，e、d成了必不可少的要素，可以把e上传到互联网作为公钥，d作为私钥。&lt;/p&gt;
+&lt;p&gt;##欧拉定理与合并&lt;br&gt;
+&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;/msup&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;≡&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;m^φ(n) ≡ 1 (mod n)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.664392em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;φ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;≡&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;。&lt;br&gt;
+在式两端同时取k次幂，接着同时乘以m，取任意正整数k，再把模运算写在左边就有&lt;br&gt;
+&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;m^kφ(n)+1 mod n = m&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1.099108em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.849108em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.03148em;&#34;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;φ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;
+将前面模运算的两式合并，就有&lt;br&gt;
+&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;m^ed mod n =m&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.664392em;&#34;&gt;&lt;span style=&#34;top:-3.063em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;e&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.43056em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;
+去除相同部分，两式结果相等时，m的指数也相等&lt;br&gt;
+&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;ed=kφ(n)+1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.69444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;d&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:1em;vertical-align:-0.25em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03148em;&#34;&gt;k&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;φ&lt;/span&gt;&lt;span class=&#34;mopen&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;
+前面已经取了值，ed的积不变，就可以随意取其中一个值的大小。Alice把n、e打包发送给Bob，Bob用n、d解密原来的数值，就完成了一次加密过程。窃听者Carol无法短时间内(应该是很长时间)获得两个数。&lt;/p&gt;
+&lt;p&gt;当然，要是有超级计算机的算力，也许还真能解开呢？可能国家就是拿来干这种事情的（误&lt;/p&gt;
+&lt;p&gt;#混合加密&lt;br&gt;
+日常使用的设备不具备高效计算能力，模运算是一个很烧cpu的事情，所以一般的传输两者结合的。&lt;/p&gt;
+&lt;p&gt;以ssl为例，当用户访问时需下载公钥，将随机的密码用公钥加密后发送给服务器，服务器收到并解密以后用该随机密码来作为双方对称加密的密钥，这样就可以用于传输大流量。&lt;/p&gt;
+&lt;p&gt;目前，混合加密已经广泛应用到大部分设备上，从日常交流的微信，到用cdn搭梯子，都有使用这项技术。&lt;/p&gt;
+">密码学基础: 对称/非对称/混合加密</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://blog.gylhr.com/KyFExvTrL/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;** 我写的不过是另外一个平行世界罢了。 **&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;##现状&lt;br&gt;
+秦统一天下以后，被 卡尔·马克思 的思潮所吸引，扬言要建立一个大同社会。但当他们走了以后，他们的敌人和官僚重新又拿起了这一把切“蛋糕”的“刀”，做起了不公平的分配。&lt;/p&gt;
+&lt;p&gt;比较一下，他们的总理曾经说过：“6亿打工人的月薪不足1000”，他们的Super Idol ——&lt;em&gt;郑不爽&lt;/em&gt; 可以每天挣100万，&lt;em&gt;吴也烦&lt;/em&gt; 能够随意欺男霸女。上层的精英掌握着优秀的资源和巨量的财富，却还要把镰刀挥向下层的韭菜。这也就导致了盛行的007和卷，他们还花钱雇人为这种行为开脱。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;##解决办法&lt;br&gt;
+百姓中自然是有觉醒的人，可正像鲁迅先生形容的那样：铁屋子里，醒来的少数人更痛苦。更多的人在做梦，梦见他们未来的秦国的强大，还有些人半睡半醒，假装不知道现实。可是被割是痛的，有人能不动声色，也有人想要革-命。于是上层就发明一个东西：奶嘴乐（把他理解成麻醉药好了），然后发给百姓，这样被割就不会再痛了。&lt;/p&gt;
+&lt;p&gt;典型的例子有很多：&lt;br&gt;
++观察者-网&lt;br&gt;
++寰球时报&lt;br&gt;
++某博大V&lt;br&gt;
+只要你的内容符合政治正确，不管真假，都会被吹上天去。&lt;br&gt;
+&lt;img src=&#34;https://lib.gylhr.com/20210802/chui.webp&#34; alt=&#34;来看看他们怎么吹的&#34; loading=&#34;lazy&#34;&gt;来营造一种秦国实力非常强大的假象。以此填补百姓心中的空缺。&lt;/p&gt;
+&lt;p&gt;#问题&lt;br&gt;
+资本主义价值观都有三个层面：个人、社会、国家。就算把国家宣扬得再好，换到韭菜被割得时候，没法做到天衣无缝的。就像我刚才讲的，国家强大，也就是这块蛋糕很大，GDP很高罢了；但是怎么分给秦国人，每个人得到有多少？这些意识形态宣传机器就从来不曾讲过。假设郑不爽每个月收入1000万，那么这就相当于底层1000个人的月薪，无形之中，她一人就骑在了1000人头上。这还只是冰山一角&lt;br&gt;
+&lt;img src=&#34;https://lib.gylhr.com/20210802/qiedangao.jpg&#34; alt=&#34;他们怎么切?&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+如果上面每1个人就能分走下面1000个人的份，你要说秦国人数众多那我倒是不介意，但这样倒不如想想你在第几层？&lt;/p&gt;
+&lt;p&gt;还有些投机倒把的资本家，把商品倾销挂上爱国的名义，就能被百姓欣然接受。比如秦国最近那个卖鞋的公司，和某一些捐款。&lt;/p&gt;
+&lt;p&gt;#总结&lt;br&gt;
+我也不知道我是醒了还是睡了。能确定的一点时：上面非常讨厌醒了的人，希望你去睡起，你睡不着就用资本的聚苯乙烯拳头打烂你，让你昏过去。&lt;/p&gt;
+&lt;p&gt;爱国可以，但请记住:一切社会的历史都是切蛋糕的历史。真正讨论分配比建设军队、研发核武器要现实得多。这才是人民应该要监督的。&lt;/p&gt;
+">警惕最近的"精神鸦片"</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://blog.gylhr.com/zai-ti-yan-jing-tai-de-kuai-zhi-qian-de-tong/"" data-c="
+          &lt;p&gt;经常有一种声音将Wordpress架构臃肿，但我觉得实际上它是一个全平台通用的程序，不可避免的要做一个“折衷派”。这也就导致了需要繁杂的mysql和php——在大型网站上运行非常靠谱，但我这种只买得起512mb内存的小鸡的人，想要跑点其他小程序就不太现实。同时，它作为动态的缺点就是每一次访问都需要向后端发起请求然后生成，遇到ddcc攻击直接暴毙。&lt;/p&gt;
+&lt;p&gt;静态则是前端存着实实在在的文件，这样响应就快很多。著名架构由hexo之类的。这次用的Gridea是个图形化的编辑器，省去了git到库的那些纷繁复杂的指令，提交更方便些。&lt;/p&gt;
+&lt;p&gt;搭建蛮简单的，网上也有教程，不作展开。这里提下矛盾主要是Github Pages已经被老大哥盯上了，间歇性阻断搞人心态，TLS证书是R3，速度慢得一批还不讨好国内某些资本家运作的浏览器；网上搜了一下，速度一般，经常被阻断的也不是个例。&lt;img src=&#34;https://lib.gylhr.com/20210801/connectionreset.png&#34; alt=&#34;TCP Connection Reset&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Coding Pages的页面在国内，用他们给的域名其实还蛮快的，ping 22ms，但如果要接入自己的域名就必须买爆贵的腾讯云境外线路，用完免费余额以后就是0.02/Gb的价格。他们的线路我测试过了，CN2一点没有，接入的是香港Amazon和HP的数据中心，线路上有163优化可是在国内的请求会遇到TCP连接重置，在国外一切正常（站长工具跑下来也基本是）&lt;img src=&#34;https://lib.gylhr.com/20210801/redstaroverchina.png&#34; alt=&#34;可以说是红星照耀中国了&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;可见其实Gridea提供的两个选项里面没有一个好的。&lt;/p&gt;
+&lt;p&gt;所以我选了Cloudflare Pages来优化。自选IP蛮好用的，其实对于动态页面来讲Cloudflare在国内确实减速，但是静态，而且又直接搭在他们服务器上，回源可以不计，还是有加速效果。我选的是他们没有公开列出的一个网段，用的人少些，速度能赶上苏卡大佬的。&lt;br&gt;
+&lt;img src=&#34;https://lib.gylhr.com/20210801/good-cloudflare.png&#34; alt=&#34;对比的情况&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;p&gt;这么一比较下来还是挺香的，图床还是用自己的vps来建，套Arvancloud CDN，灵活得多。&lt;/p&gt;
+&lt;p&gt;参见&lt;a href=&#34;https://www.v2ex.com/t/768823&#34;&gt;不懂就问， Github Page 站点速度如何优化&lt;/a&gt;&lt;/p&gt;
+">在"体验静态的快"之前的痛</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://blog.gylhr.com/geng-xin-ce-shi/"" data-c="
+          &lt;p&gt;如果我这里更新，那么Cloudflare Page 上能否看到？还是说Cloudflare只是clone了一份之前的？&lt;/p&gt;
+">更新测试</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://blog.gylhr.com/test/"" data-c="
+          &lt;p&gt;这腾讯云的cdn是真的tm慢，Coding Pages解析在国内，ping20多ms。要自己加个域名却偏偏就要跑到国外去了，活久见&lt;/p&gt;
+&lt;p&gt;根据一番Traceroute下来看，没有预想中的cn2，而且丢包都超过50%，简直了。&lt;/p&gt;
+">Test</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://blog.gylhr.com/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！（这句话tm的是系统自己生成的）😅&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;p&gt;搭建在Cloudflare Pages , 由Gridea提供强劲动力.&lt;/p&gt;
+&lt;p&gt;拿给我随便写点东西用的，建站2021年8月1日。&lt;/p&gt;
+&lt;p&gt;之前用的是搭在自己小鸡上的Wordpress，后面因为一次手残，忘记备份就开始换内核，把所有的文章搞不在了，索性也不要了⑧，域名什么的就一直闲着。后面也就莫名其妙地找到了这个宝，心血来潮建了这个站。&lt;/p&gt;
+&lt;h2 id=&#34;博主自述&#34;&gt;👨‍💻 博主自述&lt;/h2&gt;
+&lt;p&gt;坐标贵阳，今年高二，就读于成都七中网课班。&lt;/p&gt;
+&lt;p&gt;之前初中学习计算机，学了一些基础以后我们老师走了（他带我们学算法，不得不说还挺负责），我的方向就偏了，开始搞信息安全和网络这块的鬼东西，搞了很久也没什么明白，在今天只能算个一知半解的屑。&lt;/p&gt;
+&lt;p&gt;热爱计算机和化学，是一个曾经在家制炸药却把手炸伤的小民科。平常就是一个躺平的学生，认知上激进偏左（不是  ，但也读右派的书。喜欢听听国际歌之类的，看《资本论》、《毛选》和一些苏联文学，还有《让子弹飞》&lt;/p&gt;
+&lt;p&gt;“雄关漫道真如铁，而今迈步从头越。”&lt;br&gt;
+“彼时彼刻，恰如此时此刻。”&lt;br&gt;
+“赴死之人向你致敬！”&lt;/p&gt;
+&lt;p&gt;只可惜呀，现在回望过去，我早已不再是那个充满理想的少年，越来越活得像胡万了&lt;/p&gt;
+&lt;h2 id=&#34;联系我呀&#34;&gt;📬 联系我呀&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.gylhr.com&#34;&gt;Home&lt;/a&gt; 在里面了，估计没人看。&lt;/p&gt;
+">关于</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://blog.gylhr.com/hello-gridea/"" data-c="
+          &lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;
+✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/getgridea/gridea&#34;&gt;Github&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://gridea.dev/&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;http://fehey.com/&#34;&gt;示例网站&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;特性&#34;&gt;特性👇&lt;/h2&gt;
+&lt;p&gt;📝  你可以使用最酷的 &lt;strong&gt;Markdown&lt;/strong&gt; 语法，进行快速创作&lt;/p&gt;
+&lt;p&gt;🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片&lt;/p&gt;
+&lt;p&gt;🏷️  你可以对文章进行标签分组&lt;/p&gt;
+&lt;p&gt;📋  你可以自定义菜单，甚至可以创建外部链接菜单&lt;/p&gt;
+&lt;p&gt;💻  你可以在 &lt;strong&gt;Windows&lt;/strong&gt;，&lt;strong&gt;MacOS&lt;/strong&gt; 或 &lt;strong&gt;Linux&lt;/strong&gt; 设备上使用此客户端&lt;/p&gt;
+&lt;p&gt;🌎  你可以使用 &lt;strong&gt;𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌&lt;/strong&gt; 或 &lt;strong&gt;Coding Pages&lt;/strong&gt; 向世界展示，未来将支持更多平台&lt;/p&gt;
+&lt;p&gt;💬  你可以进行简单的配置，接入 &lt;a href=&#34;https://github.com/gitalk/gitalk&#34;&gt;Gitalk&lt;/a&gt; 或 &lt;a href=&#34;https://github.com/SukkaW/DisqusJS&#34;&gt;DisqusJS&lt;/a&gt; 评论系统&lt;/p&gt;
+&lt;p&gt;🇬🇧  你可以使用&lt;strong&gt;中文简体&lt;/strong&gt;或&lt;strong&gt;英语&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力&lt;/p&gt;
+&lt;p&gt;🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步&lt;/p&gt;
+&lt;p&gt;🌱 当然 &lt;strong&gt;Gridea&lt;/strong&gt; 还很年轻，有很多不足，但请相信，它会不停向前 🏃&lt;/p&gt;
+&lt;p&gt;未来，它一定会成为你离不开的伙伴&lt;/p&gt;
+&lt;p&gt;尽情发挥你的才华吧！&lt;/p&gt;
+&lt;p&gt;😘 Enjoy~&lt;/p&gt;
+">Hello Gridea</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  // var escape = "[{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;&amp;quot;密码学是关于如何在敌人存在的环境中通信&amp;quot;-- Ronald Rivest&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;在网络间传输信息有隐患，存在被窃听、篡改、假冒等等风险。所以信息安全越来越被重视，成为了计算机学科中的一个分支。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;p&gt;直到现代以前，密码学几乎专指加密算法：将普通信息（明文）转换成难以理解的资料（密文）的过程；解密算法则是其相反的过程：由密文转换回明文；加解密包含了这两种算法，一般加密即同时指称加密与解密的技术。这里主要概括我眼中密码学中最基础的三种加密算法：对称加密、非对称加密、混合加密。&lt;br&gt;\n#对称加密&lt;br&gt;\n对称加密好理解，就是通信双方事先约定好密钥，在传递信息时利用该密钥与特定加密算法加密明文，把密文发送给对方，对方又利用该密钥来解密。中间传输过程是一堆乱码，窃听者无法解密。常见的对称加密算法有：AES、Salsa20、RC5等等&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://lib.gylhr.com/20210819/Symmetric-Encryption.png\&#34; alt=\&#34;对称加密\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;对称加密有显著的缺点：必须在线下约定好密钥，如果通过线上传输那么则窃听者也可以看到密钥；大型服务商不可能对每一个用户都约定密钥，而如果采用统一密钥则又不能保证不泄露，导致效率低下。&lt;/p&gt;\n&lt;p&gt;#非对称加密&lt;br&gt;\n非对称加密是一种可以不在线下商定密钥就在线上安全传输的算法，缺点是计算量大需要大量CPU资源。&lt;/p&gt;\n&lt;p&gt;非对称加密有两个密钥，我们先设为A钥和B钥，两者在数学上有一定联系。根据数学知识，在特定的演算法下，用A钥加密的信息只能用B钥解开，用B钥加密的信息也只能由A钥解开；如果用B钥加密的信息用B钥是解不开的。我们随机规定AB中一者为公钥，另一者为私钥。公钥和加密算法是可以公布在互联网上的&lt;/p&gt;\n&lt;p&gt;如此一来，便有了经典Alice和Bob的演示：&lt;br&gt;\n1.Alice想要发信息给Bob，则Alice下载Bob在网上公布的公钥&lt;br&gt;\n2.下载该公钥，并把自己想要发送的信息用演算法与该公钥加密&lt;br&gt;\n3.将密文发送给Bob&lt;br&gt;\n4.Bob收到信息以后用自己的私钥解密，获得原文&lt;br&gt;\n5.这时Carol想要窃听通信，但是他仅仅掌握的是Bob的公钥和Alice用其加密过后的密文，苦于没有Bob的私钥，解密无法进行&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;2\&#34;&gt;&lt;img src=\&#34;https://lib.gylhr.com/20210819/Asymmetric-Encryption.png\&#34; alt=\&#34;非对称加密\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;至于上面的数学问题，这里以RSA算法为例，其他的算法有各自的数学原理，大本质上都是使用正向容易反向难得特性来达到目的：&lt;/p&gt;\n&lt;p&gt;##欧拉函数φ(n)&lt;br&gt;\n1.先选取两个质数&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo separator=\&#34;true\&#34;&gt;,&lt;/mo&gt;&lt;mi&gt;q&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;p,q&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.625em;vertical-align:-0.19444em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;p&lt;/span&gt;&lt;span class=\&#34;mpunct\&#34;&gt;,&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.16666666666666666em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34; style=\&#34;margin-right:0.03588em;\&#34;&gt;q&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，令&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo&gt;∗&lt;/mo&gt;&lt;mi&gt;q&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;n=p * q&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.43056em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.6597200000000001em;vertical-align:-0.19444em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;p&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mbin\&#34;&gt;∗&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.625em;vertical-align:-0.19444em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34; style=\&#34;margin-right:0.03588em;\&#34;&gt;q&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，φ(n)表示小于n的正整数中与n互质的数的数目。&lt;br&gt;\n举例：取p=2,q=5,则n=10。小于10的数中，1,3,7,9是和10互质的数，则&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;φ(n)=4&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;φ&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.64444em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;2.根据欧拉函数&lt;a href=\&#34;https://zh.wikipedia.org/wiki/%E6%AC%A7%E6%8B%89%E5%87%BD%E6%95%B0\&#34;&gt;证明&lt;/a&gt;，有：&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;p&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;q&lt;/mi&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;φ(n)=(p-1)x(q-1)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;φ&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;p&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mbin\&#34;&gt;−&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;1&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;x&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34; style=\&#34;margin-right:0.03588em;\&#34;&gt;q&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mbin\&#34;&gt;−&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;1&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;\n举例：根据上述，&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mn&gt;5&lt;/mn&gt;&lt;mo&gt;−&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;φ(n)=4=(2-1)(5-1)=1x4=4&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;φ&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.64444em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;4&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;2&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mbin\&#34;&gt;−&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;1&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;5&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mbin\&#34;&gt;−&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;1&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.64444em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;1&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;x&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;4&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.64444em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;4&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;##模运算&lt;br&gt;\n模运算因为正向计算容易，反向困难，又被成为单向函数。加密为&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;m^e mod n = c&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.69444em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;span class=\&#34;msupsub\&#34;&gt;&lt;span class=\&#34;vlist-t\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.664392em;\&#34;&gt;&lt;span style=\&#34;top:-3.063em;margin-right:0.05em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.7em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34;&gt;e&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;o&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;d&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.43056em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;c&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;，其中（m=message e=encrypt c=cipher d=decrypt）c数值越大，由c反推越不可能。解密则是由&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;c&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;c^d mod n =m&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.849108em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;c&lt;/span&gt;&lt;span class=\&#34;msupsub\&#34;&gt;&lt;span class=\&#34;vlist-t\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.849108em;\&#34;&gt;&lt;span style=\&#34;top:-3.063em;margin-right:0.05em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.7em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34;&gt;d&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;o&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;d&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.43056em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;故整个过程中，e、d成了必不可少的要素，可以把e上传到互联网作为公钥，d作为私钥。&lt;/p&gt;\n&lt;p&gt;##欧拉定理与合并&lt;br&gt;\n&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;/msup&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;≡&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;m^φ(n) ≡ 1 (mod n)&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;span class=\&#34;msupsub\&#34;&gt;&lt;span class=\&#34;vlist-t\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.664392em;\&#34;&gt;&lt;span style=\&#34;top:-3.063em;margin-right:0.05em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.7em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34;&gt;φ&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;≡&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;1&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;o&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;d&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;。&lt;br&gt;\n在式两端同时取k次幂，接着同时乘以m，取任意正整数k，再把模运算写在左边就有&lt;br&gt;\n&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;m^kφ(n)+1 mod n = m&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1.099108em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;span class=\&#34;msupsub\&#34;&gt;&lt;span class=\&#34;vlist-t\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.849108em;\&#34;&gt;&lt;span style=\&#34;top:-3.063em;margin-right:0.05em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.7em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34; style=\&#34;margin-right:0.03148em;\&#34;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;φ&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mbin\&#34;&gt;+&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.69444em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;1&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;o&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;d&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.43056em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;\n将前面模运算的两式合并，就有&lt;br&gt;\n&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;/msup&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;m&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;m^ed mod n =m&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.69444em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;span class=\&#34;msupsub\&#34;&gt;&lt;span class=\&#34;vlist-t\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.664392em;\&#34;&gt;&lt;span style=\&#34;top:-3.063em;margin-right:0.05em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.7em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34;&gt;e&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;d&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;o&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;d&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.43056em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;m&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;\n去除相同部分，两式结果相等时，m的指数也相等&lt;br&gt;\n&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mi&gt;d&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mi&gt;k&lt;/mi&gt;&lt;mi&gt;φ&lt;/mi&gt;&lt;mo&gt;(&lt;/mo&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;)&lt;/mo&gt;&lt;mo&gt;+&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;ed=kφ(n)+1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.69444em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;e&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;d&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:1em;vertical-align:-0.25em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34; style=\&#34;margin-right:0.03148em;\&#34;&gt;k&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;φ&lt;/span&gt;&lt;span class=\&#34;mopen\&#34;&gt;(&lt;/span&gt;&lt;span class=\&#34;mord mathdefault\&#34;&gt;n&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;)&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mbin\&#34;&gt;+&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.64444em;vertical-align:0em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;\n前面已经取了值，ed的积不变，就可以随意取其中一个值的大小。Alice把n、e打包发送给Bob，Bob用n、d解密原来的数值，就完成了一次加密过程。窃听者Carol无法短时间内(应该是很长时间)获得两个数。&lt;/p&gt;\n&lt;p&gt;当然，要是有超级计算机的算力，也许还真能解开呢？可能国家就是拿来干这种事情的（误&lt;/p&gt;\n&lt;p&gt;#混合加密&lt;br&gt;\n日常使用的设备不具备高效计算能力，模运算是一个很烧cpu的事情，所以一般的传输两者结合的。&lt;/p&gt;\n&lt;p&gt;以ssl为例，当用户访问时需下载公钥，将随机的密码用公钥加密后发送给服务器，服务器收到并解密以后用该随机密码来作为双方对称加密的密钥，这样就可以用于传输大流量。&lt;/p&gt;\n&lt;p&gt;目前，混合加密已经广泛应用到大部分设备上，从日常交流的微信，到用cdn搭梯子，都有使用这项技术。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;-Vfpz-4m3&#34;,&#34;abstract&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;&amp;quot;密码学是关于如何在敌人存在的环境中通信&amp;quot;-- Ronald Rivest&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;在网络间传输信息有隐患，存在被窃听、篡改、假冒等等风险。所以信息安全越来越被重视，成为了计算机学科中的一个分支。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;密码学基础: 对称/非对称/混合加密&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2021-08-19 10:33:14&#34;,&#34;dateFormat&#34;:&#34;2021-08-19&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://blog.gylhr.com/-Vfpz-4m3/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;6 min read&#34;,&#34;time&#34;:309000,&#34;words&#34;:1380,&#34;minutes&#34;:6},&#34;description&#34;:&#34;\n&amp;quot;密码学是关于如何在敌人存在的环境中通信&amp;quot;-- Ronald Rivest\n\n在网络间传输信息有隐患，存在被窃听、篡改、假冒等等风险。所以信息安全越来越被重视，成为了计算机学科中的一个分支。\n\n直到现代以前，密码学几乎...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;** 我写的不过是另外一个平行世界罢了。 **&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;##现状&lt;br&gt;\n秦统一天下以后，被 卡尔·马克思 的思潮所吸引，扬言要建立一个大同社会。但当他们走了以后，他们的敌人和官僚重新又拿起了这一把切“蛋糕”的“刀”，做起了不公平的分配。&lt;/p&gt;\n&lt;p&gt;比较一下，他们的总理曾经说过：“6亿打工人的月薪不足1000”，他们的Super Idol ——&lt;em&gt;郑不爽&lt;/em&gt; 可以每天挣100万，&lt;em&gt;吴也烦&lt;/em&gt; 能够随意欺男霸女。上层的精英掌握着优秀的资源和巨量的财富，却还要把镰刀挥向下层的韭菜。这也就导致了盛行的007和卷，他们还花钱雇人为这种行为开脱。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;p&gt;##解决办法&lt;br&gt;\n百姓中自然是有觉醒的人，可正像鲁迅先生形容的那样：铁屋子里，醒来的少数人更痛苦。更多的人在做梦，梦见他们未来的秦国的强大，还有些人半睡半醒，假装不知道现实。可是被割是痛的，有人能不动声色，也有人想要革-命。于是上层就发明一个东西：奶嘴乐（把他理解成麻醉药好了），然后发给百姓，这样被割就不会再痛了。&lt;/p&gt;\n&lt;p&gt;典型的例子有很多：&lt;br&gt;\n+观察者-网&lt;br&gt;\n+寰球时报&lt;br&gt;\n+某博大V&lt;br&gt;\n只要你的内容符合政治正确，不管真假，都会被吹上天去。&lt;br&gt;\n&lt;img src=\&#34;https://lib.gylhr.com/20210802/chui.webp\&#34; alt=\&#34;来看看他们怎么吹的\&#34; loading=\&#34;lazy\&#34;&gt;来营造一种秦国实力非常强大的假象。以此填补百姓心中的空缺。&lt;/p&gt;\n&lt;p&gt;#问题&lt;br&gt;\n资本主义价值观都有三个层面：个人、社会、国家。就算把国家宣扬得再好，换到韭菜被割得时候，没法做到天衣无缝的。就像我刚才讲的，国家强大，也就是这块蛋糕很大，GDP很高罢了；但是怎么分给秦国人，每个人得到有多少？这些意识形态宣传机器就从来不曾讲过。假设郑不爽每个月收入1000万，那么这就相当于底层1000个人的月薪，无形之中，她一人就骑在了1000人头上。这还只是冰山一角&lt;br&gt;\n&lt;img src=\&#34;https://lib.gylhr.com/20210802/qiedangao.jpg\&#34; alt=\&#34;他们怎么切?\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n如果上面每1个人就能分走下面1000个人的份，你要说秦国人数众多那我倒是不介意，但这样倒不如想想你在第几层？&lt;/p&gt;\n&lt;p&gt;还有些投机倒把的资本家，把商品倾销挂上爱国的名义，就能被百姓欣然接受。比如秦国最近那个卖鞋的公司，和某一些捐款。&lt;/p&gt;\n&lt;p&gt;#总结&lt;br&gt;\n我也不知道我是醒了还是睡了。能确定的一点时：上面非常讨厌醒了的人，希望你去睡起，你睡不着就用资本的聚苯乙烯拳头打烂你，让你昏过去。&lt;/p&gt;\n&lt;p&gt;爱国可以，但请记住:一切社会的历史都是切蛋糕的历史。真正讨论分配比建设军队、研发核武器要现实得多。这才是人民应该要监督的。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;KyFExvTrL&#34;,&#34;abstract&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;** 我写的不过是另外一个平行世界罢了。 **&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;##现状&lt;br&gt;\n秦统一天下以后，被 卡尔·马克思 的思潮所吸引，扬言要建立一个大同社会。但当他们走了以后，他们的敌人和官僚重新又拿起了这一把切“蛋糕”的“刀”，做起了不公平的分配。&lt;/p&gt;\n&lt;p&gt;比较一下，他们的总理曾经说过：“6亿打工人的月薪不足1000”，他们的Super Idol ——&lt;em&gt;郑不爽&lt;/em&gt; 可以每天挣100万，&lt;em&gt;吴也烦&lt;/em&gt; 能够随意欺男霸女。上层的精英掌握着优秀的资源和巨量的财富，却还要把镰刀挥向下层的韭菜。这也就导致了盛行的007和卷，他们还花钱雇人为这种行为开脱。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;警惕最近的\&#34;精神鸦片\&#34;&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2021-08-02 19:09:02&#34;,&#34;dateFormat&#34;:&#34;2021-08-02&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://blog.gylhr.com/KyFExvTrL/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;3 min read&#34;,&#34;time&#34;:156000,&#34;words&#34;:771,&#34;minutes&#34;:3},&#34;description&#34;:&#34;\n** 我写的不过是另外一个平行世界罢了。 **\n\n##现状\n秦统一天下以后，被 卡尔·马克思 的思潮所吸引，扬言要建立一个大同社会。但当他们走了以后，他们的敌人和官僚重新又拿起了这一把切“蛋糕”的“刀”，做起了不公平的分配。\n比较一下，他...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;经常有一种声音将Wordpress架构臃肿，但我觉得实际上它是一个全平台通用的程序，不可避免的要做一个“折衷派”。这也就导致了需要繁杂的mysql和php——在大型网站上运行非常靠谱，但我这种只买得起512mb内存的小鸡的人，想要跑点其他小程序就不太现实。同时，它作为动态的缺点就是每一次访问都需要向后端发起请求然后生成，遇到ddcc攻击直接暴毙。&lt;/p&gt;\n&lt;p&gt;静态则是前端存着实实在在的文件，这样响应就快很多。著名架构由hexo之类的。这次用的Gridea是个图形化的编辑器，省去了git到库的那些纷繁复杂的指令，提交更方便些。&lt;/p&gt;\n&lt;p&gt;搭建蛮简单的，网上也有教程，不作展开。这里提下矛盾主要是Github Pages已经被老大哥盯上了，间歇性阻断搞人心态，TLS证书是R3，速度慢得一批还不讨好国内某些资本家运作的浏览器；网上搜了一下，速度一般，经常被阻断的也不是个例。&lt;img src=\&#34;https://lib.gylhr.com/20210801/connectionreset.png\&#34; alt=\&#34;TCP Connection Reset\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;Coding Pages的页面在国内，用他们给的域名其实还蛮快的，ping 22ms，但如果要接入自己的域名就必须买爆贵的腾讯云境外线路，用完免费余额以后就是0.02/Gb的价格。他们的线路我测试过了，CN2一点没有，接入的是香港Amazon和HP的数据中心，线路上有163优化可是在国内的请求会遇到TCP连接重置，在国外一切正常（站长工具跑下来也基本是）&lt;img src=\&#34;https://lib.gylhr.com/20210801/redstaroverchina.png\&#34; alt=\&#34;可以说是红星照耀中国了\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;可见其实Gridea提供的两个选项里面没有一个好的。&lt;/p&gt;\n&lt;p&gt;所以我选了Cloudflare Pages来优化。自选IP蛮好用的，其实对于动态页面来讲Cloudflare在国内确实减速，但是静态，而且又直接搭在他们服务器上，回源可以不计，还是有加速效果。我选的是他们没有公开列出的一个网段，用的人少些，速度能赶上苏卡大佬的。&lt;br&gt;\n&lt;img src=\&#34;https://lib.gylhr.com/20210801/good-cloudflare.png\&#34; alt=\&#34;对比的情况\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;p&gt;这么一比较下来还是挺香的，图床还是用自己的vps来建，套Arvancloud CDN，灵活得多。&lt;/p&gt;\n&lt;p&gt;参见&lt;a href=\&#34;https://www.v2ex.com/t/768823\&#34;&gt;不懂就问， Github Page 站点速度如何优化&lt;/a&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;zai-ti-yan-jing-tai-de-kuai-zhi-qian-de-tong&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;在\&#34;体验静态的快\&#34;之前的痛&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2021-08-01 20:36:30&#34;,&#34;dateFormat&#34;:&#34;2021-08-01&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://blog.gylhr.com/zai-ti-yan-jing-tai-de-kuai-zhi-qian-de-tong/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;3 min read&#34;,&#34;time&#34;:124000,&#34;words&#34;:595,&#34;minutes&#34;:3},&#34;description&#34;:&#34;经常有一种声音将Wordpress架构臃肿，但我觉得实际上它是一个全平台通用的程序，不可避免的要做一个“折衷派”。这也就导致了需要繁杂的mysql和php——在大型网站上运行非常靠谱，但我这种只买得起512mb内存的小鸡的人，想要跑点其他小...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;如果我这里更新，那么Cloudflare Page 上能否看到？还是说Cloudflare只是clone了一份之前的？&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;geng-xin-ce-shi&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;更新测试&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2021-08-01 18:59:20&#34;,&#34;dateFormat&#34;:&#34;2021-08-01&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://blog.gylhr.com/geng-xin-ce-shi/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:6000,&#34;words&#34;:28,&#34;minutes&#34;:1},&#34;description&#34;:&#34;如果我这里更新，那么Cloudflare Page 上能否看到？还是说Cloudflare只是clone了一份之前的？\n&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;这腾讯云的cdn是真的tm慢，Coding Pages解析在国内，ping20多ms。要自己加个域名却偏偏就要跑到国外去了，活久见&lt;/p&gt;\n&lt;p&gt;根据一番Traceroute下来看，没有预想中的cn2，而且丢包都超过50%，简直了。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;test&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;Test&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2021-08-01 16:34:54&#34;,&#34;dateFormat&#34;:&#34;2021-08-01&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://blog.gylhr.com/test/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:14000,&#34;words&#34;:66,&#34;minutes&#34;:1},&#34;description&#34;:&#34;这腾讯云的cdn是真的tm慢，Coding Pages解析在国内，ping20多ms。要自己加个域名却偏偏就要跑到国外去了，活久见\n根据一番Traceroute下来看，没有预想中的cn2，而且丢包都超过50%，简直了。\n...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！（这句话tm的是系统自己生成的）😅&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;关于本站\&#34;&gt;🏠 关于本站&lt;/h2&gt;\n&lt;p&gt;搭建在Cloudflare Pages , 由Gridea提供强劲动力.&lt;/p&gt;\n&lt;p&gt;拿给我随便写点东西用的，建站2021年8月1日。&lt;/p&gt;\n&lt;p&gt;之前用的是搭在自己小鸡上的Wordpress，后面因为一次手残，忘记备份就开始换内核，把所有的文章搞不在了，索性也不要了⑧，域名什么的就一直闲着。后面也就莫名其妙地找到了这个宝，心血来潮建了这个站。&lt;/p&gt;\n&lt;h2 id=\&#34;博主自述\&#34;&gt;👨‍💻 博主自述&lt;/h2&gt;\n&lt;p&gt;坐标贵阳，今年高二，就读于成都七中网课班。&lt;/p&gt;\n&lt;p&gt;之前初中学习计算机，学了一些基础以后我们老师走了（他带我们学算法，不得不说还挺负责），我的方向就偏了，开始搞信息安全和网络这块的鬼东西，搞了很久也没什么明白，在今天只能算个一知半解的屑。&lt;/p&gt;\n&lt;p&gt;热爱计算机和化学，是一个曾经在家制炸药却把手炸伤的小民科。平常就是一个躺平的学生，认知上激进偏左（不是  ，但也读右派的书。喜欢听听国际歌之类的，看《资本论》、《毛选》和一些苏联文学，还有《让子弹飞》&lt;/p&gt;\n&lt;p&gt;“雄关漫道真如铁，而今迈步从头越。”&lt;br&gt;\n“彼时彼刻，恰如此时此刻。”&lt;br&gt;\n“赴死之人向你致敬！”&lt;/p&gt;\n&lt;p&gt;只可惜呀，现在回望过去，我早已不再是那个充满理想的少年，越来越活得像胡万了&lt;/p&gt;\n&lt;h2 id=\&#34;联系我呀\&#34;&gt;📬 联系我呀&lt;/h2&gt;\n&lt;p&gt;&lt;a href=\&#34;http://www.gylhr.com\&#34;&gt;Home&lt;/a&gt; 在里面了，估计没人看。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2019-01-25 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2019-01-25&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://blog.gylhr.com/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:83000,&#34;words&#34;:413,&#34;minutes&#34;:2},&#34;description&#34;:&#34;\n欢迎来到我的小站呀，很高兴遇见你！（这句话tm的是系统自己生成的）😅\n\n🏠 关于本站\n搭建在Cloudflare Pages , 由Gridea提供强劲动力.\n拿给我随便写点东西用的，建站2021年8月1日。\n之前用的是搭在自己小鸡上...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99\&#34;&gt;🏠 关于本站&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%9A%E4%B8%BB%E8%87%AA%E8%BF%B0\&#34;&gt;👨‍💻 博主自述&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80\&#34;&gt;📬 联系我呀&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;\n✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;p&gt;&lt;a href=\&#34;https://github.com/getgridea/gridea\&#34;&gt;Github&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;https://gridea.dev/\&#34;&gt;Gridea 主页&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;http://fehey.com/\&#34;&gt;示例网站&lt;/a&gt;&lt;/p&gt;\n&lt;h2 id=\&#34;特性\&#34;&gt;特性👇&lt;/h2&gt;\n&lt;p&gt;📝  你可以使用最酷的 &lt;strong&gt;Markdown&lt;/strong&gt; 语法，进行快速创作&lt;/p&gt;\n&lt;p&gt;🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片&lt;/p&gt;\n&lt;p&gt;🏷️  你可以对文章进行标签分组&lt;/p&gt;\n&lt;p&gt;📋  你可以自定义菜单，甚至可以创建外部链接菜单&lt;/p&gt;\n&lt;p&gt;💻  你可以在 &lt;strong&gt;Windows&lt;/strong&gt;，&lt;strong&gt;MacOS&lt;/strong&gt; 或 &lt;strong&gt;Linux&lt;/strong&gt; 设备上使用此客户端&lt;/p&gt;\n&lt;p&gt;🌎  你可以使用 &lt;strong&gt;𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌&lt;/strong&gt; 或 &lt;strong&gt;Coding Pages&lt;/strong&gt; 向世界展示，未来将支持更多平台&lt;/p&gt;\n&lt;p&gt;💬  你可以进行简单的配置，接入 &lt;a href=\&#34;https://github.com/gitalk/gitalk\&#34;&gt;Gitalk&lt;/a&gt; 或 &lt;a href=\&#34;https://github.com/SukkaW/DisqusJS\&#34;&gt;DisqusJS&lt;/a&gt; 评论系统&lt;/p&gt;\n&lt;p&gt;🇬🇧  你可以使用&lt;strong&gt;中文简体&lt;/strong&gt;或&lt;strong&gt;英语&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力&lt;/p&gt;\n&lt;p&gt;🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步&lt;/p&gt;\n&lt;p&gt;🌱 当然 &lt;strong&gt;Gridea&lt;/strong&gt; 还很年轻，有很多不足，但请相信，它会不停向前 🏃&lt;/p&gt;\n&lt;p&gt;未来，它一定会成为你离不开的伙伴&lt;/p&gt;\n&lt;p&gt;尽情发挥你的才华吧！&lt;/p&gt;\n&lt;p&gt;😘 Enjoy~&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;hello-gridea&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;👏  欢迎使用 &lt;strong&gt;Gridea&lt;/strong&gt; ！&lt;br&gt;\n✍️  &lt;strong&gt;Gridea&lt;/strong&gt; 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;Hello Gridea&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;Gridea&#34;,&#34;slug&#34;:&#34;aepPq7WvU&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://blog.gylhr.com/tag/aepPq7WvU/&#34;}],&#34;date&#34;:&#34;2018-12-12 00:00:00&#34;,&#34;dateFormat&#34;:&#34;2018-12-12&#34;,&#34;feature&#34;:&#34;https://blog.gylhr.com/post-images/hello-gridea.png&#34;,&#34;link&#34;:&#34;https://blog.gylhr.com/hello-gridea/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:62000,&#34;words&#34;:298,&#34;minutes&#34;:2},&#34;description&#34;:&#34;👏  欢迎使用 Gridea ！\n✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...\n\nGithub\nGridea 主页\n示例网站\n特性👇\n📝  你可以使用最酷的 Markdo...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%89%B9%E6%80%A7\&#34;&gt;特性👇&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
+  // var json = escape.substr(1, escape.length - 2);
+  // var datas = json.split(',');
+  // for (let i=0; i < datas.length; i++) {
+  //   let item = datas[i];
+  //   let attrs = item.split('34;:&#34')
+  //   debugger
+  //   console.log(datas[i])
+  // }
+  let escapeMap = new Map();
+  escapeMap.set('&#34;', '"');
+  escapeMap.set('&gt;', '>');
+  escapeMap.set('&#39;', "'");
+  escapeMap.set('&lt;', '<');
+  escapeMap.set('&quot;', '"');
+  escapeMap.set('&amp;', '&');
+</script> -->
 
 
-  <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad()
-  </script>
-
-
-
-
-
-  </body>
 </html>
