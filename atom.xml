@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.gylhr.com</id>
     <title>lhr&apos;s blog</title>
-    <updated>2021-08-02T12:41:24.755Z</updated>
+    <updated>2021-08-19T08:28:29.548Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.gylhr.com"/>
     <link rel="self" href="https://blog.gylhr.com/atom.xml"/>
@@ -11,11 +11,32 @@
     <icon>https://blog.gylhr.com/favicon.ico</icon>
     <rights>All rights reserved 2021, lhr&apos;s blog</rights>
     <entry>
+        <title type="html"><![CDATA[密码学基础: 对称/非对称/混合加密]]></title>
+        <id>https://blog.gylhr.com/-Vfpz-4m3/</id>
+        <link href="https://blog.gylhr.com/-Vfpz-4m3/">
+        </link>
+        <updated>2021-08-19T02:33:14.000Z</updated>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[警惕最近的"精神鸦片"]]></title>
         <id>https://blog.gylhr.com/KyFExvTrL/</id>
         <link href="https://blog.gylhr.com/KyFExvTrL/">
         </link>
         <updated>2021-08-02T11:09:02.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote>
+<p>** 我写的不过是另外一个平行世界罢了。 **</p>
+</blockquote>
+<p>##现状<br>
+秦统一天下以后，被 卡尔·马克思 的思潮所吸引，扬言要建立一个大同社会。但当他们走了以后，他们的敌人和官僚重新又拿起了这一把切“蛋糕”的“刀”，做起了不公平的分配。</p>
+<p>比较一下，他们的总理曾经说过：“6亿打工人的月薪不足1000”，他们的Super Idol ——<em>郑不爽</em> 可以每天挣100万，<em>吴也烦</em> 能够随意欺男霸女。上层的精英掌握着优秀的资源和巨量的财富，却还要把镰刀挥向下层的韭菜。这也就导致了盛行的007和卷，他们还花钱雇人为这种行为开脱。</p>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote>
+<p>** 我写的不过是另外一个平行世界罢了。 **</p>
+</blockquote>
+<p>##现状<br>
+秦统一天下以后，被 卡尔·马克思 的思潮所吸引，扬言要建立一个大同社会。但当他们走了以后，他们的敌人和官僚重新又拿起了这一把切“蛋糕”的“刀”，做起了不公平的分配。</p>
+<p>比较一下，他们的总理曾经说过：“6亿打工人的月薪不足1000”，他们的Super Idol ——<em>郑不爽</em> 可以每天挣100万，<em>吴也烦</em> 能够随意欺男霸女。上层的精英掌握着优秀的资源和巨量的财富，却还要把镰刀挥向下层的韭菜。这也就导致了盛行的007和卷，他们还花钱雇人为这种行为开脱。</p>
+]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[在"体验静态的快"之前的痛]]></title>
